@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+:root {
+    --main-font: "Single Day", cursive;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkslategrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: var(--main-font);
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+li {
+    list-style: none;
+}
