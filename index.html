@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Metadatos -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta"Single Day", cursive; name="description" content="This is a movie booking app">
+        <meta name="keywords" content="movies booking">
+        <meta name="robot" content="index, follow">
+        <!-- Título -->
+        <title>Movie Seats Booking</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="./img/logo.png">
+        <!-- Styles -->
+        <link rel="preload" href="./style/app.css" as="style">
+        <link rel="stylesheet" href="./style/app.css">
+        <link rel="preload" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" as="style">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <div class="movie-container">
+                <h1>Which movie do you like to watch today</h1>
+                <label for="movies">Select the movie</label>
+                <select name="movie" id="movies">
+                    <option value="64">The Theory of Everything (64$)</option>
+                    <option value="39">Don't Look Up (39$)</option>
+                    <option value="21">The Kingsman (21$)</option>
+                </select>
+            </div>
+
+            <ul class="showcase">
+                <li>
+                    <div class="seat"></div>
+                    <small>N/A</small>
+                </li>
+
+                <li>
+                    <div class="seat selected"></div>
+                    <small>Selected</small>
+                </li>
+
+                <li>
+                    <div class="seat occupied"></div>
+                    <small>Occupied</small>
+                </li>
+            </ul>
+
+            <div class="container">
+                <div class="screen"></div>
+                <!-- First -->
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <!-- Second -->
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <!-- Third -->
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <!-- Fourth -->
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                </div>
+                <!-- Fifth -->
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <!-- Sixth -->
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                </div>
+                <!-- Seventh -->
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+            </div>
+            <p class="text">
+                You have selected: <span id="count">0</span> seats for a price of $<span id="price">0</span>
+            </p>
+        </main>
+        <footer></footer>
+        <!-- Script -->
+        <script src="./js/app.js"></script>
+    </body>
+</html>
