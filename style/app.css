@@ -8,19 +8,82 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 body {
     background-color: darkslategrey;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
     font-family: var(--main-font);
     font-weight: 700;
     color: whitesmoke;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 li {
     list-style: none;
+}
+
+.container {
+    max-width: 80rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seat {
+    background-color: #444544;
+    width: 1.2rem;
+    height: 1.4rem;
+    margin: .5rem;
+    border-top-right-radius: .8rem;
+    border-top-left-radius: .8rem;
+}
+
+.legendItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+}
+
+.movie-container {
+    margin: 2rem 0;
+}
+
+.seat.selected {
+    background-color: bisque;
+}
+
+.seat.occupied {
+    background-color: brown;
+}
+
+.seat:not(.occupied):not(.selected):not(.available):hover {
+   transform: scale(1.1);
+   transition: all 300ms ease-in-out;
+   background-color: bisque;
+   cursor: pointer;
+}
+
+.screen {
+    width: 20rem;
+    height: 20rem;
+    background-image: url(../src/theaterimage.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
